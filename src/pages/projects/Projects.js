@@ -27,9 +27,9 @@ class Projects extends Component {
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
                 <img
-											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/>
+                  src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
+                  alt=""
+                />
                 <ProjectsImg theme={theme} />
               </div>
               <div className="projects-heading-text-div">
@@ -54,13 +54,13 @@ class Projects extends Component {
             return <GithubRepoCard repo={repo} theme={theme} />;
           })}
         </div>
-        <Button
+        {/* <Button
           text={"More Projects"}
           className="project-button"
           href={greeting.githubProfile}
           newTab={true}
           theme={theme}
-        />
+        /> */}
 
         {/* Publications  */}
         {publications.data.length > 0 ? (

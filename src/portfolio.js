@@ -530,7 +530,7 @@ const experience = {
   header_image_path: "experience.svg",
   sections: [
     {
-      title: "Work",
+      title: <h2 style={{ fontWeight: "bold" }}>Work Experience</h2>,
       work: true,
       experiences: [
         {
@@ -598,7 +598,7 @@ const experience = {
           description:
             "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
           color: "#ee3c26",
-        }
+        },
       ],
     },
   ],
@@ -649,13 +649,23 @@ const contactPageData = {
   contactSection: {
     title: "Contact Me",
     profile_image_path: "Shadab_img.png",
-    description:
-      "I am availe any time you can contact me via email or through call. My email is shadabmughal8061@gmail.com and my phone number is +91 6260470311. I am also available on social media platforms like LinkedIn, Twitter, Instagram and Facebook.",
+    description: (
+      <p>
+        I am available any time you can contact me via email or through call. My
+        email is{" "}
+        <a href="mailto:shadabmughal8061@gmail.com">
+          shadabmughal8061@gmail.com
+        </a>{" "}
+        and my phone number is
+        <strong style={{ color: "black" }}> +91 6260470311</strong>. I am also
+        available on social media platforms like LinkedIn, Twitter, Instagram
+        and Facebook.
+      </p>
+    ),
   },
   blogSection: {
     title: "",
-    subtitle:
-      "",
+    subtitle: "",
     link: "",
     avatar_image_path: "",
   },
